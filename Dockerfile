@@ -1,5 +1,7 @@
 FROM nginx
 
+RUN apt-get install git
+
 RUN git clone https://github.com/willrax/emberdoro.git
 
 WORKDIR /emberdoro
